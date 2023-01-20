@@ -29,6 +29,10 @@ namespace BinarySearchTree
 
             Console.WriteLine("======Binary Tree elements are======");
             binarySearchTree.Display();
+            Console.WriteLine();
+            Console.WriteLine("Enter a number u want to search");
+            int element = Convert.ToInt32(Console.ReadLine());
+            bool result = binarySearchTree.Search(element, binarySearchTree);
         }
     }
 }
